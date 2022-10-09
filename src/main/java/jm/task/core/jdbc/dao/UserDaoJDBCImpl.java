@@ -50,11 +50,6 @@ public class UserDaoJDBCImpl implements UserDao {
             preparedStatement.setByte(3, age);
             preparedStatement.executeUpdate();
 
-//            System.out.println("INFO: User \"Alex\" added to database successfully");
-//            System.out.println("INFO: User \"Anton\" added to database successfully");
-//            System.out.println("INFO: User  \"Lev\" added to database successfully");
-//            System.out.println("INFO: User  \"Vladimir\" added to database successfully");
-
         } catch (SQLException e) {
             e.printStackTrace();
         }
