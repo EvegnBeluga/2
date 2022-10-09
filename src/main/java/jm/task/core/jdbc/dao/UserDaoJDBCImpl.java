@@ -67,7 +67,7 @@ public class UserDaoJDBCImpl implements UserDao {
              PreparedStatement preparedStatement = connection.prepareStatement(sql)) {
             preparedStatement.setLong(1, id);
             preparedStatement.executeUpdate();
-            System.out.println("INFO: Remove successful, user id: " + id);
+            System.out.println("Удаление user по id: " + id + ", прошло успешно!");
         } catch (SQLException e) {
             e.printStackTrace();
         }
